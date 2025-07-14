@@ -15,23 +15,27 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a poem topic"
-            autofocus
-            required
-            autocomplete="off"
-            class="poem-query"
-            id="user-input"
-          />
-          <input type="submit" class="submit-button" value="Enter" />
-        </form>
-        <div class="poem" id="poem">
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic or theme for your poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="poem-query"
+              id="user-input"
+            />
+            <input type="submit" class="submit-button" value="Enter" />
+          </form>
+          <div class="example">
+            Example: summer holiday, cherry blossom, snow
+          </div>
+        </div>
+        <div class="poem hidden" id="poem">
           <br />
         </div>
       </main>
-
       <footer>
         Created by Grace Wong and is open-sourced on
         <a
